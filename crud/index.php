@@ -33,11 +33,7 @@
         include "controlador/registro_persona.php";
 
         ?>
-  
-  
-  
-  
-        <div class="mb-3">
+    <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nombre</label>
     <input type="text" class="form-control" name="nombre">
      </div>
@@ -64,7 +60,6 @@
  
   <button type="submit" class="btn btn-primary" name="btnregistrar" value="ok">Registrar</button>
 </form>
-
 <div class="col-8 p-4">
 <table class="table">
   <thead>
@@ -86,8 +81,6 @@
     while($datos=$sql->fetch_object()){
       
       ?>
-
-      
      <td><?=$datos->id_persona?></td>
      <td><?=$datos->nombre?></td>
      <td><?=$datos->apellido?></td>
@@ -100,15 +93,12 @@
         <a onclick="return eliminar()" href="index.php?id=<?= $datos->id_persona?>" class="btn btn-small btn-danger"><i class="fa-solid fa-trash"></i></a>
     </td>
     </tr>
-
 <?php
  }
       ?>  
-   
-  </tbody>
+    </tbody>
 </table>
 </div>
     </div>
- 
-</body>
+ </body>
 </html>
