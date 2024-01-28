@@ -21,7 +21,6 @@ if(!empty($_POST["btnregistrar"])){
         echo 'Error en la consulta SQL: ' . $conexion->error;
     }
 
-
    }else{
     echo "<div class='alert alert-warning'> Campos vacios</div>";
    }
